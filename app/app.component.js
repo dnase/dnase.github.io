@@ -12,10 +12,13 @@ var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
     }
+    AppComponent.prototype.ngAfterViewInit = function () {
+        $('.parallax').parallax();
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: ''
+            template: "\n    <div class=\"parallax-container\">\n    <div class=\"parallax\"><img src=\"images/parallax1.jpg\"></div>\n    </div>\n    <div class=\"section white\">\n    <div class=\"row container\">\n      <h2 class=\"header\">Drew Nase</h2>\n      <p class=\"grey-text text-darken-3 lighten-3\">I am going to put some stuff here.</p>\n    </div>\n    </div>\n    <div class=\"parallax-container\">\n      <div class=\"parallax\"><img src=\"images/parallax2.jpg\"></div>\n    </div>\n    <div class=\"row container\">\n      <h2 class=\"header\">MOAR STUFF</h2>\n      <p class=\"grey-text text-darken-3 lighten-3\">This is more text and stuff.</p>\n    </div>\n    "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

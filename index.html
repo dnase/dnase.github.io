@@ -16,6 +16,8 @@
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
 
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
@@ -26,28 +28,6 @@
 
   <!-- 3. Display the application -->
   <body>
-    <div class="parallax-container">
-    <div class="parallax"><img src="images/parallax1.jpg"></div>
-    </div>
-    <div class="section white">
-    <div class="row container">
-      <h2 class="header">Parallax</h2>
-      <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-    </div>
-    </div>
-    <div class="parallax-container">
-      <div class="parallax"><img src="images/parallax2.jpg"></div>
-    </div>
-    <div class="row container">
-      <h2 class="header">MOAR STUFF</h2>
-      <p class="grey-text text-darken-3 lighten-3">This is more text and stuff.</p>
-    </div>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.parallax').parallax();
-        });
-    </script>
+    <my-app>Loading...</my-app>
   </body>
 </html>
