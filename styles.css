@@ -1,4 +1,7 @@
 .icon-circle {
   max-width: 90px;
-  margin: 10px;
+}
+
+.inline-pls {
+  display: inline;
 }
