@@ -1,5 +1,8 @@
 import { bootstrap }    from '@angular/platform-browser-dynamic';
 
-import { AppComponent } from './app.component';
+import { HeadingComponent } from './heading.component';
 
-bootstrap(AppComponent);
+import { WYGComponent } from './wyg.component';
+
+bootstrap(HeadingComponent);
+bootstrap(WYGComponent);

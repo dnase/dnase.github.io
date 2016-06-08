@@ -2,7 +2,7 @@ import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'heading',
-  templateUrl: 'components/heading.html'
+  templateUrl: 'templates/heading.html'
 })
 
-export class AppComponent { }
+export class HeadingComponent { }
