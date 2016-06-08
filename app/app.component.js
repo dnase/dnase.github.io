@@ -15,7 +15,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: ""
+            template: "\n  <div class=\"row container\" >\n    <div class=\"col s12 valign-wrapper\">\n      <img src=\"images/drewface1.png\" alt=\"\" class=\"circle responsive-img\" style=\"min-width: 90px;\" />\n      <h1 class=\"header inline-pls\">Drew Nase</h1>\n    </div>\n  </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
