@@ -10,3 +10,7 @@
 .parallax-container {
   height: 500px;
 }
+
+.bold-text {
+  font-weight: bold;
+}
