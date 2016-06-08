@@ -30,23 +30,30 @@
 
   <!-- 3. Display the application -->
   <body>
+      <div class="section grey lighten-3">
+          <div class="row container">
+              <heading><h2 class="header">Loading...</h2></heading>
+          </div>
+      </div>
       <div class="parallax-container">
           <div class="parallax"><img src="images/parallax1.jpg"></div>
       </div>
       <div class="section grey lighten-3">
           <div class="row container">
-              <heading><br /><br /><br /></heading>
-          </div>
-          <div class="row container">
               <description><br /><br /><br /></description>
           </div>
-          <div class="container">
+          <div class="row container">
               <what-you-get><br /><br /><br /></what-you-get>
           </div>
-          <div class="container">
+      </div>
+      <div class="parallax-container">
+          <div class="parallax"><img src="images/parallax4.jpg"></div>
+      </div>
+      <div class="section grey lighten-3">
+          <div class="row container">
               <projects><br /><br /><br /></projects>
           </div>
-          <div class="container">
+          <div class="row container">
               <logos><br /><br /><br /></logos>
           </div>
       </div>
@@ -61,9 +68,7 @@
       </div>
 
       <script type="text/javascript">
-        $(document).ready(function(){
           $('.parallax').parallax();
-        });
       </script>
   </body>
 </html>

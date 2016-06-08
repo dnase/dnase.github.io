@@ -17,3 +17,7 @@
 .bold-text {
   font-weight: bold;
 }
+
+.parallax{
+  position:static;
+}
