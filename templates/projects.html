@@ -1,10 +1,9 @@
 <br />
 <div class="card-panel grey z-depth-2">
-    <span class="white-text flow-text">A Few of My Projects</span>
+    <span class="white-text flow-text">{{title}}</span>
     <div class="collection">
-        <a class="collection-item flow-text" href="https://github.com/dnase/tictactoe" target="_blank">Tic tac toe with a variant of Minimax using A/B pruning</a>
-        <a class="collection-item flow-text" href="https://github.com/dnase/affine-gap-sequence-alignment" target="_blank">Affine gap alignment of gene sequences in Python</a>
-        <a class="collection-item flow-text" href="https://github.com/dnase/lp5-theme-bootstrap" target="_blank">A responsive theme using Bootstrap for Luminis Portal</a>
-        <a class="collection-item flow-text" href="https://github.com/dnase/pythoncrack" target="_blank">A Python script for cracking SHA1-encrypted (LDAP) password hashes</a>
+        <div *ngFor="let project of projects">
+            <a class="collection-item flow-text" href="{{project.url}}" target="_blank" rel="nofollow">{{project.description}}</a>
+        </div>
     </div>
 </div>

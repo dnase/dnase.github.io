@@ -11,6 +11,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var ProjectsComponent = (function () {
     function ProjectsComponent() {
+        this.title = 'A Few of My Projects';
+        this.projects = PROJECTS;
     }
     ProjectsComponent = __decorate([
         core_1.Component({
@@ -22,4 +24,10 @@ var ProjectsComponent = (function () {
     return ProjectsComponent;
 }());
 exports.ProjectsComponent = ProjectsComponent;
+var PROJECTS = [
+    { name: 'TicTacToe', description: 'Tic tac toe with a variant of Minimax using A/B pruning', url: 'https://github.com/dnase/tictactoe' },
+    { name: 'AGPython', description: 'Affine gap alignment of gene sequences in Python', url: 'https://github.com/dnase/affine-gap-sequence-alignment' },
+    { name: 'LP5Responsive', description: 'A responsive theme using Bootstrap for Luminis Portal', url: 'https://github.com/dnase/lp5-theme-bootstrap' },
+    { name: 'PyCrack', description: 'A Python script for cracking SHA1-encrypted (LDAP) password hashes', url: 'https://github.com/dnase/pythoncrack' },
+];
 //# sourceMappingURL=projects.component.js.map
