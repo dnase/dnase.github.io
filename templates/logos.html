@@ -1,61 +1,11 @@
 <br />
 <div class="card-panel grey z-depth-2">
+    <span class="white-text flow-text">{{title}}</span>
     <div class="row">
-        <div class="col s2">
-            <img src="images/python.png" alt="" class="responsive-img" />
-        </div>
-        <div class="col s2">
-            <img src="images/angular.png" alt="" class="responsive-img" />
-        </div>
-        <div class="col s1">
-            <img src="images/apache.png" alt="" class="responsive-img" />
-        </div>
-        <div class="col s2">
-            <img src="images/nginx.png" alt="" class="responsive-img" />
-        </div>
-        <div class="col s2">
-            <img src="images/mongodb.png" alt="" class="responsive-img" />
-        </div>
-        <div class="col s1">
-            <img src="images/html5.png" alt="" class="responsive-img" />
-        </div>
-        <div class="col s1">
-            <img src="images/php.png" alt="" class="responsive-img" />
-        </div>
-        <div class="col s1">
-            <img src="images/mysql.png" alt="" class="responsive-img" />
-        </div>
-    </div>
-    <div class="row">
-        <div class="col s2">
-            <img src="images/jquery.png" alt="" class="responsive-img" />
-        </div>
-        <div class="col s1">
-            <img src="images/postgresql.png" alt="" class="responsive-img" />
-        </div>
-        <div class="col s1">
-            <img src="images/grunt.png" alt="" class="responsive-img" />
-        </div>
-        <div class="col s1">
-            <img src="images/gulp_sass.png" alt="" class="responsive-img" />
-        </div>
-        <div class="col s2">
-            <img src="images/bootstrap.png" alt="" class="responsive-img" />
-        </div>
-        <div class="col s1">
-            <img src="images/git.png" alt="" class="responsive-img" />
-        </div>
-        <div class="col s1">
-            <img src="images/rails.png" alt="" class="responsive-img" />
-        </div>
-        <div class="col s1">
-            <img src="images/ruby.png" alt="" class="responsive-img" />
-        </div>
-        <div class="col s1">
-            <img src="images/typescript.png" alt="" class="responsive-img" />
-        </div>
-        <div class="col s1">
-            <img src="images/docker.png" alt="" class="responsive-img" />
+        <div *ngFor="let logo of logos">
+            <div class="col s{{logo.cols}}">
+                <a href="{{logo.url}}" target="_blank" rel="nofollow"><img src="images/{{logo.image}}" alt="{{logo.name}}" class="responsive-img" /></a>
+            </div>
         </div>
     </div>
 </div>
