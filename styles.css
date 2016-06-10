@@ -2,14 +2,6 @@
   display: inline;
 }
 
-.chip-background {
-  background-image: url('images/parallax3.jpg');
-  background-size: 1920px;
-}
-.space-background {
-  background-image: url('images/bg1.jpg');
-  background-size: 1920px;
-}
 .parallax-container {
   height: 320px;
 }
