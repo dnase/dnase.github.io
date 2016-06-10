@@ -29,7 +29,7 @@ var LOGOS: Logo[] = [
   { name: 'jQuery', image: 'jquery.png', url: 'https://jquery.com/', cols: 2 },
   { name: 'TypeScript', image: 'typescript.png', url: 'https://www.typescriptlang.org/', cols: 2 },
   { name: 'Docker', image: 'docker.png', url: 'https://www.docker.com/', cols: 2 },
-  { name: 'Git', image: 'git.png', url: 'https://git-scm.com/', cols: 2 },
+  { name: 'Git', image: 'git.png', url: 'https://git-scm.com/', cols: 1 },
   { name: 'Rails', image: 'rails.png', url: 'http://rubyonrails.org/', cols: 1 },
   { name: 'Ruby', image: 'ruby.png', url: 'https://www.ruby-lang.org/', cols: 2 },
 ];
