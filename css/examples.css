@@ -1011,23 +1011,17 @@ a.viewsource:before {
 
 .sweng {
 	background-image: url('../img/sw_eng.png');
-	background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+	background-repeat: repeat;
 }
 
 .devops {
 	background-image: url('../img/devops.png');
-	background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+	background-repeat: repeat;
 }
 
 .research {
 	background-image: url('../img/research.png');
-	background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+	background-repeat: repeat;
 }
 
 /*
