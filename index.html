@@ -1,79 +1,101 @@
-<html>
-  <head>
-    <title>Drew J Nase</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--Google AMP-->
-    <link rel="amphtml" href="https://dnase.github.io/amp.html">
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=1000" />
+	<meta name="keywords" content="Software Engineer, Software Developer, DevOps Engineer, DevOps Consultant, SDLC Consultant" />
+	<meta name="author"	content="Drew Nase(drewnase.com)" />
+	<title>Drew Nase</title>
 
-    <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
-    <link href="styles.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Josefin+Slab:400,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/examples.css" type="text/css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
-    <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/reflect-metadata/Reflect.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <script src="systemjs.config.js"></script>
-    <script>
-      System.import('app').catch(function(err){ console.error(err); });
-    </script>
-  </head>
+	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="js/lib/highlight.pack.js"></script>
+	<script type="text/javascript" src="js/lib/modernizr.custom.min.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
 
-  <body>
-      <div class="navbar-fixed">
-        <nav>
-          <div class="nav-wrapper grey lighten-3">
-              <img src="images/drewface1.png" alt="" class="circle responsive-img" height=48 width=48 />
-              <h3 class="header inline-pls black-text valign-wrapper">Drew Nase</h3>
-              <ul class="right hide-on-small-only">
-                  <li><a href="/DrewJNase_2016.pdf" class="black-text">Résumé</a></li>
-                  <li><a href="mailto:dnasecs@gmail.com" class="black-text">Contact</a></li>
-              </ul>
-              </div>
-          </nav>
-      </div>
-      <div class="parallax-container">
-          <div class="parallax"><img src="images/parallax4.jpg"></div>
-      </div>
-      <div class="section grey lighten-3">
-          <div class="row container">
-              <projects>
-                  <div class="progress">
-                      <div class="indeterminate"></div>
-                  </div>
-              </projects>
-          </div>
-      </div>
-      <div class="parallax-container">
-          <div class="parallax"><img src="images/parallax4.jpg"></div>
-      </div>
-      <div class="section grey lighten-3">
-          <div class="row container">
-              <logos>
-                  <div class="progress">
-                      <div class="indeterminate"></div>
-                  </div>
-              </logos>
-          </div>
-      </div>
-      <div class="fixed-action-btn click-to-toggle hide-on-med-and-up" style="bottom: 45px; right: 24px;">
-          <a class="btn-floating btn-large black">
-              <i class="large material-icons">menu</i>
-          </a>
-          <ul>
-              <li><a class="btn-floating black" href="mailto:dnasecs@gmail.com"><i class="material-icons">email</i></a></li>
-              <li><a class="btn-floating black" href="/DrewJNase_2016.pdf"><i class="material-icons">file_download</i></a></li>
-          </ul>
-      </div>
-      <script type="text/javascript">
-          $('.parallax').parallax();
-      </script>
-  </body>
+	<script type="text/javascript" src="js/lib/greensock/TweenMax.min.js"></script>
+	<script type="text/javascript" src="scrollmagic/uncompressed/ScrollMagic.js"></script>
+	<script type="text/javascript" src="scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+	<!--<script type="text/javascript" src="scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>-->
+	<!-- Compiled and minified materialize CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- Compiled and minified materialize JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+	<div id="content-wrapper">
+		<div id="example-wrapper">
+			<div class="scrollContent">
+				<section id="titlechart">
+					<div id="description">
+						<h1>
+							<img class="circle" width="100px" height="100px" src="img/lambda.jpg" />
+							<img class="responsive-img circle" src="img/headshot.jpg" />
+							<img class="circle" width="100px" height="100px" src="img/coffee_beans.jpg" />
+						</h1>
+						<h1>Drew Nase</h1>
+					</div>
+				</section>
+				<section class="demo" id="section-wipes">
+					<style type="text/css">
+						#pinContainer {
+							width: 100%;
+							height: 100%;
+							overflow: hidden;
+						}
+						.panel {
+							height: 100%;
+							width: 100%;
+							position: absolute;
+						}
+					</style>
+					<div id="pinContainer">
+						<section class="panel black sweng">
+							<b style="font-size: 30px;">Software Engineering</b>
+						</section>
+						<section class="panel turqoise devops">
+							<b style="font-size: 30px;">DevOps</b>
+						</section>
+						<section class="panel green research">
+							<b style="font-size: 30px;">Research</b>
+						</section>
+						<section class="panel bordeaux">
+							<b style="font-size: 30px;">OH MY!</b>
+						</section>
+					</div>
+					<script>
+						$(function () { // wait for document ready
+							// init
+							var controller = new ScrollMagic.Controller();
+
+							// define movement of panels
+							var wipeAnimation = new TimelineMax()
+								.fromTo("section.panel.turqoise", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
+								.fromTo("section.panel.green",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+								.fromTo("section.panel.bordeaux", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
+
+							// create scene to pin and link animation
+							new ScrollMagic.Scene({
+									triggerElement: "#pinContainer",
+									triggerHook: "onLeave",
+									duration: "750%"
+								})
+								.setPin("#pinContainer")
+								.setTween(wipeAnimation)
+								.addIndicators() // add indicators (requires plugin)
+								.addTo(controller);
+						});
+					</script>
+				</section>
+			</div>
+		</div>
+	</div>
+</body>
 </html>
