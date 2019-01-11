@@ -58,17 +58,17 @@
 						}
 					</style>
 					<div id="pinContainer">
-						<section class="panel black sweng">
-							<b style="font-size: 46px;">Software Engineering</b>
+						<section class="panel black" id="sweng_">
+							<!--<b style="font-size: 46px; z-index: 1;">Software Engineering</b>-->
 						</section>
-						<section class="panel turqoise devops">
-							<b style="font-size: 46px;">DevOps</b>
+						<section class="panel turqoise" id="devops_">
+							<b style="font-size: 46px; z-index: 1;">Software Engineering</b>
 						</section>
-						<section class="panel green research">
-							<b style="font-size: 46px;">Research</b>
+						<section class="panel green" id="research_">
+							<b style="font-size: 46px; z-index: 1;">DevOps</b>
 						</section>
-						<section class="panel bordeaux">
-							<b style="font-size: 46px;">OH MY!</b>
+						<section class="panel bordeaux" id="last_">
+							<b style="font-size: 46px; z-index: 1;">Contact</b>
 						</section>
 					</div>
 					<script>
@@ -92,6 +92,47 @@
 								.setTween(wipeAnimation)
 								.addIndicators() // add indicators (requires plugin)
 								.addTo(controller);
+						});
+					</script>
+					<script>
+						var images =  ['ruby.png', 'docker.png', 'elastic.png', 'tensorflow.png', 'ansible.png', 'terraform.png', 'php.png', 'kubernetes.png', 'clojure.png', 'golang.png', 'python.png', 'puppet.png', 'java.png', 'aws.png', 'lambda.png', 'logstash.png', 'scipy.png', 'jenkins.png', 'javascript.png', 'perl.png'];
+						function shuffle(a) {
+					    var j, x, i;
+					    for (i = a.length - 1; i > 0; i--) {
+					        j = Math.floor(Math.random() * (i + 1));
+					        x = a[i];
+					        a[i] = a[j];
+					        a[j] = x;
+					    }
+					    return a;
+						}
+						images = shuffle(images);
+						var i;
+						var m = document.getElementById("sweng_")
+						images.forEach(function(image) {
+							i = document.createElement("img");
+							i.src = "img/" + image
+							i.height = "250"
+							i.style = "opacity: .5; z-index: 0;"
+							m.append(i)
+						});
+						images = shuffle(images);
+						m = document.getElementById("devops_")
+						images.forEach(function(image) {
+							i = document.createElement("img");
+							i.src = "img/" + image
+							i.height = "250"
+							i.style = "opacity: .5; z-index: 0;"
+							m.append(i)
+						});
+						images = shuffle(images);
+						m = document.getElementById("research_")
+						images.forEach(function(image) {
+							i = document.createElement("img");
+							i.src = "img/" + image
+							i.height = "250"
+							i.style = "opacity: .5; z-index: 0;"
+							m.append(i)
 						});
 					</script>
 				</section>
